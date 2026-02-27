@@ -1,4 +1,4 @@
-// Array are Mutable
+// // Array are Mutable
 
 let num = [1,2,3,4,5,6,7,8];
 
@@ -33,14 +33,14 @@ console.log(friends.slice(-7, -2))
 friends.splice(2, "Pratima Didi", "S", "Q", "W", "D", "J", "P")
 console.log(friends)
 
-// Constant Array
+// // Constant Array
 const A = [11,22,33,44]
 console.log(A.reverse())
 A.push(55)
 console.log(A)
 
 
-//Nested Array
+// //Nested Array
 num = [[0.1,0.2], [1,2],[1,1], [2,2], [3,3]]
 console.log(num[2][1])
 
@@ -62,3 +62,19 @@ if(game[index].toLowerCase() === true){
 
 let p = "    Jerry   "
 console.log(p.trim())
+
+
+let Fruits = ["Apple", "Banana", "Carrot", "Pineapple", "Orange"];
+for(let each of Fruits){
+    console.log(each)
+}
+
+let details = {
+    name: "Swikriti Khanal",
+    age: 17,
+    roll_no: 23,
+
+}
+for(let value in details){
+    console.log(value, details[value])
+}
