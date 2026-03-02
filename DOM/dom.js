@@ -19,11 +19,11 @@ let country = document.getElementById("country");
 btn.addEventListener("click", (e) => {
      e.preventDefault();
     let gender = document.querySelector('input[name="gender"]:checked').value;
-    let hobbies = document.querySelector('.checkbox-group input[type = "checkbox"]:checked')
+    let hobbies = document.querySelector('.checkbox-group input[type="checkbox"]:checked')
     let selected = country.options[country.selectedIndex].value;
     
    
-    if (name.value == '' || email.value == '' || password.value == '' || selected.value == '' || gender.value == '' || hobbies.value == '') {
+    if (name.value == '' || email.value == '' || password.value == '' || selected.value == '' || gender.value == '' || hobbies.value === '') {
         alert("Please fill the form correctly")
     } else {
         alert("Form submitted successfully")
