@@ -11,9 +11,13 @@ form.addEventListener('submit', (e)=>{
         alert("Please fill the form correctly!")
     } else{
         alert("Form successfully submited")
+        alert("Form successfully submitted!");
+        console.log("Name:", name.value);
+        console.log("Email:", email.value);
+        console.log("Country:", selected);
+        console.log("Gender:", gender.value);
+        console.log("Hobbies:", Array.from(hobbies).map(h => h.value));
     }
-    console.log(name.value)
-    console.log(email.value)
-    console.log(Array.from(hobbies).map(h => h.value))
+   
     
 })

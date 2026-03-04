@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Form Example</title>
+</head>
+
+<body>
+    <h1>To do list</h1>
+    <input id="i">
+    <button>Add Task</button>
+    <ul>
+    </ul>
+</body>
+<script>
+
+    let j = document.querySelector("button");
+    j.addEventListener("click", (e) => {
+        e.preventDefault();
+        let ul = document.querySelector("ul")
+        let ipt = document.querySelector("#i")
+        let v = ipt.value;
+        let newLi = document.createElement("li")
+        newLi.innerText = v;
+        ul.appendChild(newLi);
+        
+    })
+
+</script>
+
+</html>
