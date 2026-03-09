@@ -38,7 +38,7 @@ createOrder().then(
 })
 
 let processPayment = () => {
-    return new Promise((requst,resolve)=>{
+    return new Promise((resolve,reject)=>{
     setTimeout(() => {
         let create = (Math.floor(Math.random() * 10) + 1)
         if (create > 5) {
